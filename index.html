@@ -9,22 +9,39 @@
 <body>
     <header>
         <h1>Mi primer Sitio Web</h1>
-        <nav>
+        <nav class="main-nav" aria-label="Navegacion principal">
         <ul>
-            <li>Inicio</li>
-            <li><a href="Intereses.html">Intereses</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
+            <li><a class="active" href="index.html">Sobre mi</a></li>
+            <li><a href="Intereses.html">Mis intereses</a></li>
+            <li><a href="Contacto.html">Hablemos</a></li>
         </ul>
         </nav>
     </header>
-    <main>
-        <p> Soy nico, Bienvenido a mi primer sitio web</p>
-        <p> En el mismo vas a poder conocer mas sobre mi y mis intereses </p>
-        <img src= "Imagen/Perfil profesional de Nicolás Rueda (1).png" alt="Foto de perfil" >
-
-    </main>
+    <div id="presentacion">
+        <div id="foto">
+            <img src= "Imagen/Perfil profesional de Nicolás Rueda (1).png" alt="Foto de perfil" >
+        </div>
+        <div id="texto">
+            <div id="inicio">
+                <p> Soy Nico, Bienvenido a Mi Primer Sitio Web</p>
+            </div>
+            <div id="descripcion">
+                <p> Soy Nico, tengo 24 años y me dedico a la consultoría en sistemas hace aproximadamente un año. Estoy cursando una Tecnicatura en Desarrollo de Software, que me está dando las herramientas para crecer cada vez más en el mundo tech.
+En mi trabajo me especializo en análisis de información, análisis de usuarios y análisis de accesos. Me gusta entender cómo funcionan los sistemas y cómo mejorarlos para que sean más eficientes y seguros.
+Por fuera del trabajo, soy bastante apasionado con varias cosas. Los videojuegos son parte de mi vida desde chico, el fútbol no puede faltar, y los autos son otra de mis grandes pasiones — me encantan el diseño, la mecánica y todo lo que lo rodea. </p>
+            </div>
+        </div>
+    </div>
     <footer>
-        <p>© 2026 Mi primer Sitio Web. Todos los derechos reservados.</p>   
+        <div class="footer-content">
+            <p class="footer-brand">Nicolas Rueda | Mi primer sitio web</p>
+            <p class="footer-meta">© 2026 Todos los derechos reservados.</p>
+            <nav class="footer-nav" aria-label="Enlaces del pie de pagina">
+                <a href="index.html">Inicio</a>
+                <a href="Intereses.html">Intereses</a>
+                <a href="Contacto.html">Contacto</a>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>

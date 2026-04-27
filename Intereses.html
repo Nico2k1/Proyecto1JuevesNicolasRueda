@@ -9,20 +9,28 @@
 <body>
     <header>
         <h1>Mi primer Sitio Web</h1>
-        <nav>
+        <nav class="main-nav" aria-label="Navegacion principal">
         <ul>
-            <li><a href="Index.html">Inicio</a></li>
-            <li>Intereses</li>
+            <li><a href="index.html">Sobre mi</a></li>
+            <li><a class="active" href="Intereses.html">Mis intereses</a></li>
             <li><a href="Contacto.html">Contacto</a></li>
         </ul>
         </nav>
     </header>
-    <main>
+    <main class="intereses-main">
         <h2>Mis Intereses</h2>
-        <p> Me gusta jugar juegos, ver peliculas y salir a caminar. </p>
+        <p> Fuera del ámbito profesional, tengo varias pasiones que me definen. Los videojuegos son algo que me acompaña desde siempre — me encantan la competencia, la estrategia y la adrenalina que generan. El fútbol es otra de mis grandes pasiones, ya sea jugando con amigos o siguiendo a mi equipo, es algo que no puede faltar en mi vida. Y los autos son un mundo que me fascina — desde el diseño hasta la mecánica, me atrae todo lo que tenga que ver con la velocidad y la ingeniería automotriz. </p>
     </main>
     <footer>
-        <p>© 2026 Mi primer Sitio Web. Todos los derechos reservados.</p>   
+        <div class="footer-content">
+            <p class="footer-brand">Nicolas Rueda | Mi primer sitio web</p>
+            <p class="footer-meta">© 2026 Todos los derechos reservados.</p>
+            <nav class="footer-nav" aria-label="Enlaces del pie de pagina">
+                <a href="index.html">Inicio</a>
+                <a href="Intereses.html">Intereses</a>
+                <a href="Contacto.html">Contacto</a>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>
