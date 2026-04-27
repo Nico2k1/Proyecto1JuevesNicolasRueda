@@ -188,7 +188,78 @@ h2 {
   color: #1f1f1f;
 }
 
+.contacto-main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 85px auto;
+  padding: 0 20px;
+}
+
+.contacto-paneles {
+  width: 100%;
+  background-color: #f3f3f3;
+  border: 1px solid #d8d8d8;
+  display: flex;
+}
+
+.contacto-item {
+  width: 50%;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.contacto-item + .contacto-item {
+  border-left: 1px solid #d8d8d8;
+}
+
+.contacto-icono {
+  font-size: 48px;
+  color: #f36b2a;
+  line-height: 1;
+  margin-bottom: 22px;
+}
+
+.contacto-icono img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.contacto-item h3 {
+  margin: 0 0 14px;
+  font-size: 32px;
+  color: #6a6a6a;
+}
+
+.contacto-item p {
+  margin: 0 0 16px;
+  color: #9a9a9a;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.contacto-item strong,
+.contacto-item strong a {
+  color: #f36b2a;
+  font-size: 25px;
+  text-decoration: none;
+}
+
 @media (max-width: 900px) {
+  .contacto-paneles {
+    flex-wrap: wrap;
+  }
+
+  .contacto-item {
+    width: 100%;
+    padding: 36px 24px;
+  }
+
+  .contacto-item + .contacto-item {
+    border-left: 0;
+    border-top: 1px solid #d8d8d8;
+  }
+
   .intereses-galeria {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
